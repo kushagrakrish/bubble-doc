@@ -14,4 +14,7 @@ Sentry.init({
   debug: false,
 });
 
-export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
+// Placeholder for router transition start logic, as Sentry does not provide 'captureRouterTransitionStart'.
+export const onRouterTransitionStart = () => {
+  console.warn("Router transition start capture is not implemented.");
+};
