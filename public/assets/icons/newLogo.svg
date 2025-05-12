@@ -1,0 +1,9 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Document Icon -->
+  <path d="M30 10H50L60 20V50C60 51.1046 59.1046 52 58 52H32C30.8954 52 30 51.1046 30 50V10Z" fill="#4F46E5"/>
+  <path d="M50 10L60 20H50V10Z" fill="#6366F1"/>
+  <path d="M35 25H55M35 30H45M35 35H55M35 40H45" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Text -->
+  <text x="80" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white">CollabDoc</text>
+</svg>

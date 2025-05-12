@@ -16,6 +16,7 @@ import { Input } from "./ui/input";
 import UserTypeSelector from "./UserTypeSelector";
 import Collaborator from "./Collaborator";
 import { updateDocumentAccess } from "@/lib/actions/room.actions";
+import Loader from "./Loader";
 
 const ShareModal = ({
   roomId,
@@ -48,7 +49,7 @@ const ShareModal = ({
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger>
           <Button
-            className='gradient-blue flex h-9 gap-1 px-4'
+            className='bg-indigo-600 hover:bg-indigo-700 flex h-9 gap-1 px-4'
             disabled={currentUserType !== "editor"}
           >
             <Image
@@ -85,10 +86,10 @@ const ShareModal = ({
             <Button
               type='submit'
               onClick={shareDocumentHandler}
-              className='gradient-blue flex h-full gap-1 px-5'
+              className='bg-indigo-600 hover:bg-indigo-700 flex h-full gap-1 px-5'
               disabled={email === "" || loading}
             >
-              {loading ? "Sending..." : "Invite"}
+              {loading ? <Loader /> : "Invite"}
             </Button>
           </div>
           <div className='my-2 space-y-2'>

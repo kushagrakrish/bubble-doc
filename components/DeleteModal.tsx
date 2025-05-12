@@ -16,6 +16,7 @@ import {
 
 import { deleteDocument } from "@/lib/actions/room.actions";
 import { Button } from "./ui/button";
+import Loader from "./Loader";
 
 export const DeleteModal = ({ roomId }: DeleteModalProps) => {
   const [open, setOpen] = useState(false);
@@ -73,7 +74,7 @@ export const DeleteModal = ({ roomId }: DeleteModalProps) => {
             onClick={deleteDocumentHandler}
             className='gradient-red w-full'
           >
-            {loading ? "Deleting..." : "Delete"}
+            {loading ? <Loader /> : "Delete"}
           </Button>
         </DialogFooter>
       </DialogContent>
